@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <img src="logo.png" class="img1">
+    <h1>Students Registration Form</h1>
+    <div>
+        <img src="avatar.png" class="avatar">
+        <form action="action.html" method="POST">
+            <label for="fname" class="firstname">First Name</label><input type="text" maxlength="30" placeholder="Enter First Name" id="fname" onclick="clickfun()" name="fname"><span id="first"></span><br>
+            <label for="ln" class="secondname">Last Name</label><input type="text" maxlength="30" placeholder="Enter Last Name" id="lname" onclick="clickfun1()" name="ln"><span id="second"></span><br>
+            <label for="db" class="thirdname">Date of Birth</label><input type="date" name="db"><br>
+            <label for="em" class="fourname">Email ID</label><input type="email" placeholder="Enter Email Adress" id="mail" onclick="clickfun2()" name="em"><span id="third"></span><br>
+            <label for="mn" class="fivename">Mobile Number</label><input type="number" maxlength="10" placeholder="Enter Mobile Number" id="mn" onclick="clickfun3()" name="mn"><span id="fth" ></span><br>
+            <label class="sixname">Gender</label>
+            <input type="radio" name="Radio" >
+            <label for="Radio" class="ff-01">Male</label>
+            <input type="radio" name="Radio">
+            <label for="Radio">Female</label>
+            <input type="radio" name="Radio">
+            <label for="Radio">Other</label><br>
+            <label class="sevenname">Address</label>
+            <textarea rows="4" cols="50" maxlength="400" style="border: 1px solid #666666;"></textarea><br>
+            <label for="pc"  class="eightname">Pin COde</label><input type="number" maxlength="6" placeholder="Enter Pin Code" id="pc" onclick="clickfun5()" name="pc"><span \
+            id="sth" ></span><br>
+            <label for="st">State</label><input type="text" maxlength="30" placeholder="Enter State Name" id="st" onclick="clickfun6()" name="st"><span id="seth"></span><br>
+            <label for="c">Country</label><input type="text" maxlength="30" placeholder="Enter Country Name" id="c" onclick="clickfun7()" name="c"><span id="eith"></span><br>
+            <span class="ex"><label for="cb">Hobbies</label>
+            <input type="checkbox"  name="cb">Singing</input>
+            <input type="checkbox"  name="cb">Drawing</input>
+            <input type="checkbox"  name="cb">Dancing</input>
+            <input type="checkbox"  name="cb">Sketching</input>
+            <input type="checkbox"  name="cb">Other</input><input type="text" style="position: relative; width: 100px;"></span>
+            <br>
+            <label for="li">Qualification:</label>
+            <table style="text-align: center;">
+                <tr>
+                    <td>S.no</td>
+                    <td>Examination</td>
+                    <td>Board</td>
+                    <td>Percentage</td>
+                    <td>Year of Passing</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" maxlength="10"></td>
+                    <td><input type="number" minength="2"></td>
+                    <td><input type="number" ></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text" maxlength="10"></td>
+                    <td><input type="number" minength="2"></td>
+                    <td><input type="number" ></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text" maxlength="10"></td>
+                    <td><input type="number" minength="2"></td>
+                    <td><input type="number" ></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text" maxlength="10"></td>
+                    <td><input type="number" minength="2"></td>
+                    <td><input type="number" ></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>10 char max</td>
+                    <td>upto 2 decimal</td>
+                    <td></td>
+                </tr>
+            </table><br>
+            <label>Courses Applied for</label>
+            <input type="radio" name="Radio" >
+            <label for="Radio" class="ff-01">BCA</label>
+            <input type="radio" name="Radio">
+            <label for="Radio" class="ff-01">B.Com</label>
+            <input type="radio" name="Radio">
+            <label for="Radio" class="ff-01">B.Sc</label>
+            <input type="radio" name="Radio">
+            <label for="Radio" class="ff-01">B.A</label><br>
+            <input type="reset"><input type="submit" class="submit">
+        </form>
+        <script src="Assignment 02.js"></script>
+    </div>
+</body>
+</html>

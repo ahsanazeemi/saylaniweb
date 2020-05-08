@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, cyan, magenta);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+* {
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    line-height: 2;
+}
+div {
+    position: absolute;
+    top: -8400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 720px;
+    padding: 80px 10px;
+    background: rgba(0, 0, 0, .8);
+    animation: name .5s ease-in 1 forwards;
+    animation-delay: 0ms;
+    margin-bottom: 20px;
+}
+@keyframes name {
+    0% {
+        top: -840px;
+    }
+    100% {
+        top: 840px;
+    }
+}
+div:after {
+    content: ' ';
+    top: 0;
+    left: 50%;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(255 , 255, 255, .05);
+    pointer-events: none;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(-150px/2);
+    left: calc(-50% -50px);
+    right: 285px;
+}
+.img1 {
+    margin: 0px auto;
+    display: block;
+    width: 300px;
+}
+h1 {
+    text-transform: uppercase;
+    margin: 10px auto;
+    width: 570px;
+}
+textarea, div input[type= "text"], div input[type= "email"], div input[type= "number"]  , div input[type= "date"] {
+    border: none;
+    border-bottom: 1px solid #666666;
+    background: transparent;
+}
+#fname:focus, #lname:focus, #mail:focus, #mn:focus, #cn:focus, #st:focus, #pc:focus{
+    width: 300px;
+}
+input, table,textarea {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+}
+.ex {
+    color: white;
+}
+label {
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: white;
+    margin-bottom: 10px;
+    width: 100px;
+    display: inline-block;
+}
+#first, #second , #third, #fth, #fith, #sth, #seth, #eith {
+    color: white;
+}
+.ff-01 {
+    width: 20px;
+}
+.sevenname {
+    position: relative;
+    top: -50px;
+}
+input[type= "submit"] {
+    width: 200px;
+    background: transparent;
+    border: 2px white solid;
+    border-radius: 40px;
+    outline: none;
+    font-size: 20px;
+    transition: .4s linear all;
+    text-align: center;
+    left: 360px;
+    position: absolute;
+}
+input[type= "submit"]:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, cyan , teal);
+}
+input[type= "reset"] {
+    width: 200px;
+    background: transparent;
+    border: 2px white solid;
+    border-radius: 40px;
+    outline: none;
+    font-size: 20px;
+    transition: .9s linear all;
+    text-align: center;
+    left: 160px;
+    position: absolute;
+
+
+}
+input[type= "reset"]:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, cyan , teal);
+}
+span {
+    margin-left: 10px;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Periodic Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto Slab', serif !important;
+        }
+        body{
+        margin: 0;
+        padding: 0;
+        background: #000;
+        }
+        .heading {
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            background: black;
+            height: 80px;
+            line-height: 80px;
+            letter-spacing: 15px;
+            text-shadow: 0px 0px 10px blue;
+            color: white;
+        }
+        .small-head {
+            width: 450px;
+            height: 25px;
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 5px;
+            left: 0%;
+            position: relative;
+            color: white;
+            animation: top 5s linear infinite;
+        }
+        @keyframes top{
+            0% {
+                left: 20%;
+            }
+            100% {
+                left: 500px;
+            }
+        }
+        .shadow{
+        position: relative;
+        margin: 39px auto 0; 
+        width: 90%;
+        height: 600px;
+        background: linear-gradient(0deg,#000,#262626);
+        padding: 10px;
+        }
+
+        .shadow:before,
+        .shadow:after{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(45deg, #fb0094,#0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+        background-size: 800%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: animate 50s linear infinite;
+        }
+        .shadow:after{
+        filter: blur(20px);
+        }
+
+        @keyframes animate{
+            0%{
+            background-position: 0 0;
+            }
+            50%{
+            background-position: 400% 0;
+            }
+            100%{
+            background-position: 0 0;
+            }
+        }
+        .table, .lower {
+            text-align: center;
+            color: white;
+            width: 100%;
+            margin-top: 20px;
+
+        }
+        .table tr td, .lower tr td {
+            width: 5.2% ;
+            border: 2px white solid;
+        }
+        .lower {
+           margin-top: 15px;
+        }
+        .H{
+            background: linear-gradient(45deg, coral, darksalmon);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .He {
+            background: linear-gradient(45deg, #ffffff, #444444);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .B {
+            background: linear-gradient(45deg, brown, orange);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .F {
+            background: linear-gradient(45deg, lightsteelblue, dodgerblue);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .A {
+            background: linear-gradient(45deg, green, yellow);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .L {
+            background: linear-gradient(45deg, red, magenta);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .B {
+            background: linear-gradient(45deg, blue, lightblue);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .S {
+            background: linear-gradient(45deg, Yellow, lightyellow);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .N {
+            background: linear-gradient(45deg, lightyellow, lightgrey);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+        .LA {
+            background: linear-gradient(45deg, lightskyblue, lightgrey);
+            color: black;
+            border: 2px solid black;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="small-head">
+        Created & Designed by: Ahsan Azeemi
+    </div>
+    <div class="heading">
+        The Periodic Table
+    </div>
+    <div class="shadow">
+        <table class="table">
+            <tr>
+                <td class="H">1<br>H</td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                </span>
+                <td class="He">2<br>He</td>
+            </tr>
+            <tr>
+                <td class="L">3<br>Li</td>
+                <td class="B">4<br>Be</td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td  style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td class="B">5<br>B</td>
+                <td class="H">6<br>C</td>
+                <td class="H">7<br>N</td>
+                <td class="H">8<br>O</td>
+                <td class="F">9<br>F</td>
+                <td class="He">10<br>Ne</td>
+            </tr>
+            <tr>
+                <td class="L">11<br>Na</td>
+                <td class="B">12<br>Mg</td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td  style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td style="visibility: hidden;"><br></td>
+                <td class="A">13<br>Al</td>
+                <td class="B">14<br>Si</td>
+                <td class="H">15<br>P</td>
+                <td class="H">16<br>S</td>
+                <td class="F">17<br>Cl</td>
+                <td class="He">18<br>Ar</td>
+            </tr>
+            <tr>
+                <td class="L">19<br>K</td>
+                <td class="B">20<br>Ca</td>
+                <td class="S">21<br>Sc</td>
+                <td class="S">22<br>Ti</td>
+                <td class="S">23<br>V</td>
+                <td class="S">24<br>Cr</td>
+                <td class="S">25<br>Mn</td>
+                <td class="S">26<br>Fe</td>
+                <td class="S">27<br>Co</td>
+                <td class="S">28<br>Ni</td>
+                <td class="S">29<br>Cu</td>
+                <td class="S">30<br>Zn</td>
+                <td class="A">31<br>Ga</td>
+                <td class="B">32<br>Ge</td>
+                <td class="B">33<br>As</td>
+                <td class="H">34<br>Se</td>
+                <td class="F">35<br>Br</td>
+                <td class="He">36<br>Kr</td>
+            </tr>
+            <tr>
+                <td class="L">37<br>Rb</td>
+                <td class="B">38<br>Sr</td>
+                <td class="S">39<br>Y</td>
+                <td class="S">40<br>Zr</td>
+                <td class="S">41<br>Nb</td>
+                <td class="S">42<br>Mo</td>
+                <td class="S">43<br>Tc</td>
+                <td class="S">44<br>Ru</td>
+                <td class="S">45<br>Rh</td>
+                <td class="S">46<br>Pd</td>
+                <td class="S">47<br>Ag</td>
+                <td class="S">48<br>Cd</td>
+                <td class="A">49<br>In</td>
+                <td class="A">50<br>Sn</td>
+                <td class="B">51<br>Sb</td>
+                <td class="B">52<br>Te</td>
+                <td class="F">53<br>I</td>
+                <td class="He">54<br>Xe</td>
+            </tr>
+            <tr>
+                <td class="L">55<br>Cs</td>
+                <td class="B">56<br>Ba</td>
+                <td class="N"><span style="font-size: 15px;">57-71</span><br><span  style="visibility: hidden;">.</span></td>
+                <td class="S">72<br>Hf</td>
+                <td class="S">73<br>Ta</td>
+                <td class="S">74<br>W</td>
+                <td class="S">75<br>Re</td>
+                <td class="S">76<br>Os</td>
+                <td class="S">77<br>Ir</td>
+                <td class="S">78<br>Pt</td>
+                <td class="S">79<br>Au</td>
+                <td class="S">80<br>Hg</td>
+                <td class="A">81<br>Tl</td>
+                <td class="A">82<br>Pb</td>
+                <td class="A">83<br>Bi</td>
+                <td class="B">84<br>Po</td>
+                <td class="F">85<br>At</td>
+                <td class="He">86<br>Rn</td>
+            </tr>
+            <tr>
+                <td class="L">87<br>Fr</td>
+                <td class="B">88<br>Ra</td>
+                <td class="N"><span style="font-size: 15px;">89-103</span><br><span  style="visibility: hidden;">.</span></td>
+                <td class="S">104<br>Rf</td>
+                <td class="S">105<br>Db</td>
+                <td class="S">106<br>Sg</td>
+                <td class="S">107<br>Bh</td>
+                <td class="S">108<br>Hs</td>
+                <td class="S">109<br>Mt</td>
+                <td class="S">110<br>Ds</td>
+                <td class="S">111<br>Rg</td>
+                <td class="S">112<br>Cn</td>
+                <td class="N">113<br>Nh</td>
+                <td class="N">114<br>Fl</td>
+                <td class="N">115<br>Mc</td>
+                <td class="N">116<br>Lv</td>
+                <td class="N">117<br>Ts</td>
+                <td class="N">118<br>Og</td>
+            </tr>
+        </table>
+            <table class="lower">
+                <tr>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td class="LA">57<br>La</td>
+                    <td class="LA">58<br>Ce</td>
+                    <td class="LA">59<br>Pr</td>
+                    <td class="LA">60<br>Nd</td>
+                    <td class="LA">61<br>Pm</td>
+                    <td class="LA">62<br>Sm</td>
+                    <td class="LA">63<br>Eu</td>
+                    <td class="LA">64<br>Gd</td>
+                    <td class="LA">65<br>Tb</td>
+                    <td class="LA">66<br>Dy</td>
+                    <td class="LA">67<br>Ho</td>
+                    <td class="LA">68<br>Er</td>
+                    <td class="LA">69<br>Tm</td>
+                    <td class="LA">70<br>Yb</td>
+                    <td class="LA">71<br>Lu</td>
+                    <td style="visibility: hidden;"><br></td>
+                </tr>
+                <tr>
+                    <td style="visibility: hidden;"><br></td>
+                    <td style="visibility: hidden;"><br></td>
+                    <td class="LA">89<br>Ac</td>
+                    <td class="LA">90<br>Th</td>
+                    <td class="LA">91<br>Pa</td>
+                    <td class="LA">92<br>U</td>
+                    <td class="LA">93<br>Np</td>
+                    <td class="LA">94<br>Pu</td>
+                    <td class="LA">95<br>Am</td>
+                    <td class="LA">96<br>Km</td>
+                    <td class="LA">97<br>Bk</td>
+                    <td class="LA">98<br>Cf</td>
+                    <td class="LA">99<br>Es</td>
+                    <td class="LA">100<br>Fm</td>
+                    <td class="LA">101<br>Md</td>
+                    <td class="LA">102<br>No</td>
+                    <td class="LA">103<br>Lr</td>
+                    <td style="visibility: hidden;"><br></td>
+                </tr>
+            </table>
+        </table>
+    </div>
+</body>
+</html>

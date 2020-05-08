@@ -1,0 +1,737 @@
+/***********
+***Styles
+************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: 0.2s all linear;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+.container#blur.active{
+    filter: blur(20px);
+}
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    text-align: center;
+    height: 450px;
+}
+#popup h1{
+    margin: 0;
+    text-align: center;
+}
+#popup p{
+    font-size: 20px;
+}
+#popup img{
+    text-align: center;
+    margin: 4px auto;
+}
+#popup button{
+    border-style: none;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid gray;
+    position: relative;
+    right: -77%;
+    bottom: 350px;
+}
+#popup button:hover{
+    background: red;
+    color: white;
+    transition: 0.1s all linear;
+    border: none;
+}
+#popup button i{
+    font-size: 30px;
+    padding: 8px;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.small-header{
+    background: linear-gradient(45deg, dodgerblue, teal);
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+.small-header span a {
+    color: white;
+    margin-right: 10px;
+}
+.icons-span {
+    margin: 0px 10px;
+    display: inline-block;
+    width: 15%;
+}
+.small-header-text{
+    margin: 0px 10px;
+    text-align: center;
+    width: 49%;
+    display: inline-block;
+    font-size: 14px;
+}
+.small-header-buttons {
+    width: 29%;
+    display: inline-block;
+    text-align: center;
+
+}
+.small-header-buttons button {
+    border: 1px white solid;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    padding: 5px 5px;
+    outline: none;
+}
+.small-header-buttons button:hover {
+    background: linear-gradient(45deg, cyan, dodgerblue);
+    border: none;
+    position: relative;
+    bottom: 2px;
+}
+.main-header {
+    width: 100%;
+    background: whitesmoke;
+    height: 81.41px;
+    padding: 10px;
+    overflow: visible;
+}
+.head-logo{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+.head-logo a img{
+    max-width: 200px;
+}
+.tabs{
+    display: inline-block;
+    width: 68%;
+}
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 81.41px;
+    position: relative;
+    bottom: 19.5px;
+}
+.menu-list li {
+    display: inline-block;
+    position: relative;
+}
+.default{
+    color: white !important;
+    background: linear-gradient(45deg, darkblue, dodgerblue);
+    border-radius: 30px;
+}
+.menu-list li a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 13px !important;
+}
+.menu-list li a:hover {
+    background: linear-gradient(45deg, darkblue, dodgerblue);
+    color: white;
+    border-radius: 30px;
+    transition: 0.25s all linear;
+}
+.menu-list{
+    font-size: 13px;
+}
+.sub-menu-list, .sub-menu-list1, .sub-menu-list2 {
+    display: none;
+    width: 200px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+}
+.sub-menu-list li, .sub-menu-list1 li, .sub-menu-list2 li{
+    display: block;
+}
+.menu-list li:hover .sub-menu-list, .sub-menu-list li:hover .sub-menu-list1, .sub-menu-list1 li:hover .sub-menu-list2 {
+    display: block;
+}
+.sub-menu-list1{
+    position: absolute;
+    left: 100%;
+    top: 0%;
+}
+.sub-menu-list2{
+    position: absolute;
+    left: 100%;
+    top: 0%;
+}
+.sub-menu-list li a, .sub-menu-list1 li a, .sub-menu-list2 li a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    line-height: 1;
+    font-size: 12px;
+    text-align: left;
+    transition: 0.25s all linear;
+}
+.sub-menu-list li a:hover, .sub-menu-list1 li a:hover, .sub-menu-list2 li a:hover{
+    background: linear-gradient(45deg, darkblue, dodgerblue);
+    color: white;
+    border-radius: 0px;
+    transition: 0.25s all linear;
+    position: relative;
+    left: 12px;
+}
+#extra{
+    position: absolute;
+    top: 100%;
+    left: -60% !important;
+    width: 140px;
+}
+#extra1{
+    left: -40%;
+    width: 80px !important;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+ .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+.ticker{
+    width: 100%;
+    background: linear-gradient(45deg,cyan, dodgerblue, cyan);
+    position: relative;
+    bottom: 10px;
+    z-index: 1;
+    padding: 5px;
+    display: flex;
+}
+marquee{
+    padding: 0;
+    margin: 0;
+}
+.intro{
+    width: 100%;
+    background: whitesmoke;
+    position: relative;
+    bottom: 17px;
+}
+.container1{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    color: lightslategray;
+
+}
+.container1 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    background: -webkit-linear-gradient(cyan, dodgerblue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.container1 p {
+    margin: 20px;
+}
+.container2{
+    background: linear-gradient(115deg, cyan,dodgerblue);
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    bottom: 17px;
+}
+.all{
+    width: 87%;
+    margin: 0 auto;
+    text-align: center;
+}
+.element{
+    display: inline-block;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+    width: 21%;
+    height: 197px;
+
+}
+.element img {
+    text-align: center;
+    width: 70px;
+}
+.num{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+.status{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+.container3{
+    background: whitesmoke;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 17px;
+    text-align: center;
+}
+.container3 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    background: -webkit-linear-gradient(cyan, dodgerblue, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.all1{
+    width: 100%;
+    margin: 0;
+}
+.ele1{
+    display: inline-block;
+    width: 27%;
+    height: 200px;
+    text-align: center;
+    margin: 15px;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ele1 img{
+    text-align: center;
+    width: 70px;
+    margin-top: 35px;
+}
+.ele1:hover{
+    position: relative;
+    bottom: 10px;
+}
+.container4{
+    width: 100%;
+    position: relative;
+    bottom: 17px;
+}
+.missions{
+    width:68%;
+    display: inline-block;
+    padding: 20px;
+
+}
+.missions h1{
+    border-bottom: lightgray 1px solid;
+    width: 450px;
+    color: darkblue;
+}
+.all2{
+    padding: 20px;
+}
+.ele4{
+    background: rgba(0, 0, 0, 0.08);
+    width: 300px;
+    margin: 10px;
+    line-height: 39px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    display: inline-block;
+}
+.ele4 img{
+    width: 30px;
+    margin: 0 15px;
+}
+.events h1{
+    border-bottom: lightgray 1px solid;
+    width: 300px;
+    color: darkblue;
+}
+.events{
+    width: 28%;
+    display: inline-block;
+    color: gray;
+}
+.container5{
+    width: 100%;
+    background: #f5f5f5;
+}
+.all5 h1{
+    color: darkblue;
+    text-align: center;
+}
+.all5{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.all5 img{
+    width: 170px;
+}
+.icons{
+    background: black;
+    padding: 5px;
+    position: relative;
+    right: 30px;
+    bottom: 110px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.container6{
+    width: 100%;
+    padding: 20px;
+    background: #333333;
+}
+.contact{
+    display: inline-block;
+    padding: 10px;
+    color: lightgray;
+    width: 31%;
+}
+
+.contact p i {
+    color: darkgreen;
+}
+.links{
+    display: inline-block;
+    padding: 10px;
+    color: lightgray;
+    margin-left: 20px;
+    width: 31%;
+}
+.links h1{
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    bottom: 299px;
+    font-size: 20px;
+}
+.social{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+    width: 31%;
+}
+.social span{
+    border-radius: 60%;
+    background: darkblue;
+    padding: 6px;
+    margin: 10px;
+    position: relative;
+    bottom: 210px;
+}
+.social h1{
+    position: relative;
+    bottom: 250px;
+    border-bottom: 1px solid lightgray;
+    color: lightgrey;
+    font-size: 20px;
+}
+.social span:hover{
+    background: dodgerblue !important;
+    border: none !important;
+}
+.social span a{
+    text-decoration: none;
+    color: white;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: dodgerblue;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+.social-icons ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    bottom: 240px;
+}
+.social-icons ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 100%;
+    margin: 0px 8px;
+}
+.social-icons ul li a{
+    display: block;
+    color: white;
+}
+.social-icons ul li a i{
+    line-height: 40px;
+}
+.social-icons ul li:hover:nth-child(1){
+    background: #1da1f2;
+    border: none;
+    transform: translateY(-3px);
+}
+.social-icons ul li:hover:nth-child(2){
+    background: #c32aa3;
+    border: none;
+    transform: translateY(-3px);
+}
+.social-icons ul li:hover:nth-child(3){
+    background: #ff0000;
+    border: none;
+    transform: translateY(-3px);
+}
+.social-icons ul li:hover:nth-child(4){
+    background: #25d366;
+    border: none;
+    transform: translateY(-3px);
+}
+.down{
+    position: relative;
+    bottom: 50px;
+    left: -110px;
+    display: inline-block;
+}
+.down a{
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background: dodgerblue;
+    border-radius: 100%;
+    display: inline-block;
+    color: white;
+}
+.down a i{
+    line-height: 50px;
+}
+#popup a{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    right: 23px;
+    text-decoration: none;
+    color: gray;
+    background: transparent;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    padding: 15px;
+}
+#popup a:hover{
+    background: linear-gradient(45deg, darkblue, dodgerblue);
+    border: none;
+    color: white;
+}
+@media only screen and (max-width: 800px) {
+    .icons-span{
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #popup{
+        width: 300px;
+        padding: 40px 10px;
+        height: 350px;
+    }
+    #popup img{
+        width: 160px;
+    }
+    #popup button{
+        bottom: 282px;
+        margin: 10px 0px;
+        right: -80%;
+        border: none;
+    }
+    #popup button:hover{
+        background: none;
+        color: black;
+        outline: none;
+    }
+    #popup button i{
+        padding: 5px;
+        font-size: 16px;
+    }
+    #popup h1{
+        font-size: 26px;
+    }
+    #popup p{
+        font-size: 15px;
+    }
+    .all2{
+        padding: 5px;
+    }
+    .ele4{
+        width: 220px;
+    }
+    .events h1{
+        width: 270px;
+    }
+    .small-header-text{
+        display: block;
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .small-header-buttons{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0px;
+    }
+    .main-header{
+        height: auto;
+    }
+    .head-logo{
+        width: 100%;
+        display: block;
+    }
+    .tabs{
+        display: inline;
+        width: 100%;
+        height: auto;
+        top: 20px;
+        position: relative;
+    }
+    .menu-list{
+        display: block;
+    }
+    .container1{
+        width: 100%;
+    }
+    .element{
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .ele1{
+        display: block;
+        width: 100%;
+        margin: 35px auto;
+    }
+    .missions{
+        display: block;
+    }
+    .events{
+        padding: 20px;
+        width: 300px;
+        display: block;
+        margin: 5px;
+    }
+    .contact{
+        display: block;
+    }
+    .social{
+        display: block;
+        text-align: center;
+    }
+    .links{
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .all5 img{
+        display: block;
+        margin: 15px auto;
+    }
+    .links h1{
+        bottom: 0;
+        font-size: 20px;
+    }
+    .social{
+        margin: 17px 0;
+        padding: 0;
+        width: 100%;
+    }
+    .social h1{
+        bottom: 0;
+        font-size: 20px;
+        border: none;
+        text-align: left;
+    }
+    .social span{
+        bottom: 0;
+    }
+    .missions h1{
+        width: 280px;
+    }
+    .copyright{
+        font-size: 15px;
+    }
+    .ticker{
+        height: 30px;
+        font-size: 15px;
+    }
+    .container1 h1{
+        font-size: 25px;
+    }
+    .container1{
+        padding: 5px;
+        bottom: 0;
+    }
+    .contact{
+        font-size: 14px;
+        width: 100%;
+    }
+    .social-icons ul{
+        bottom: 0;
+    }
+    .down{
+        bottom: 120px;
+        left: 0px;
+    }
+    .all5 img{
+        width: 250px;
+    }
+    #popup a{
+        font-size: 12px;
+        padding: 8px;
+    }
+}
